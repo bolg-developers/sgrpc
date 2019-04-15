@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/bolg-developers/sgrpc/server/hello"
-	"google.golang.org/grpc"
 	"log"
 	"net"
+
+	"github.com/bolg-developers/sgrpc/server/hello"
+	"google.golang.org/grpc"
 )
 
 func main() {
@@ -12,6 +13,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	log.Println("サーバーが起動しました！")
 
 	server := grpc.NewServer()
 
